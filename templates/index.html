@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+     <h1 style="text-align:center"> Survived or Not- Classification</h1>
+        <p style="text-align:center">Kindly input the values for required variables and click on Predict</p>
+            <form action='/predict' method="POST" style="color:blue;text-align:center">
+
+                <input type= 'number'  name='pclass'  placeholder="Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)" step="any" required>
+                <input type= 'number'  name='Sex'  placeholder="1: Male, 0:female" step="any" required>
+                <input type= 'number'  name='Age'  placeholder="Age" step="any" required>
+                <input type= 'number'  name='Sibsp' placeholder="Number of Siblings/Spouses Aboard" step="any" required>
+                <input type= 'number'  name='Parch'  placeholder="Number of Parents/Children Aboard" step="any" required>
+                <input type= 'number'  name='Fare' placeholder="Passenger Fare" step="any" required>
+
+                <input type= 'Submit' value= 'Predict' >
+
+
+            </form>
+
+        <p style="text=align:center"> Attribute details: </p>
+
+        <p> pclass: Passenger Class (1 = 1st; 2 = 2nd; 3 = 3rd)</p>
+
+        <p>     sex: Sex (Male:1, Female:0   </p>
+
+        <p>       Age:Age </p>
+
+        <p>       sibsp: Number of Siblings/Spouses Aboard </p>
+
+        <p>       parch: Number of Parents/Children Aboard </p>
+
+        <p>     fare: Passenger Fare </p>
+
+
+
+
+</body>
+</html>
